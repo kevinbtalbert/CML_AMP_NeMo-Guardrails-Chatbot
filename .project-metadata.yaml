@@ -1,0 +1,66 @@
+name: Chatbot with Guardrails
+description: "AMP showcasing NeMo Guardrails, Langchain, OpenAI Embeddings, Pinecone, and Streamlit to create a complete Chatbot usecase with Guardrails."
+author: "Cloudera Community AMP"
+date: "2024-2-2"
+specification_version: 1.0
+prototype_version: 1.0
+environment_variables:
+  OPENAI_API_KEY:
+    default: ""
+    description: "Access key ID for interacting with OpenAI API"
+  OPENAI_EMBEDDING_MODEL:
+    default: "text-embedding-ada-002"
+    description: "Embedding model for OpenAI to use (Default is the text-embedding-ada-002 embedding model)"
+  OPENAI_LLM_COMPLETION_MODEL:
+    default: "text-davinci-003"
+    description: "Completion model for OpenAI to use (Default is the text-davinci-003 completion model)"
+  PINECONE_API_KEY:
+    default: ""
+    description: "Access key ID for interacting with Pinecone API"
+  PINECONE_ENVIRONMENT:
+    default: "gcp-starter"
+    description: "Only Required for Pinecone Vector DB: Enter your Pinecone environment here. (Shown in API Keys page)"
+  PINECONE_INDEX:
+    default: "cml-guardrails"
+    description: "Only Required for Pinecone Vector DB: The default is 'cml-default' and can be changed to identify variations for organizations with multiple indexes."
+
+runtimes: 
+  - editor: JupyterLab
+    kernel: Python 3.10
+    edition: Standard
+  
+tasks:
+  - type: run_session
+    name: Install Dependencies
+    script: 0_session-install-deps/install-dependencies.py
+    short_summary: Install Dependencies
+    kernel: python3
+    cpu: 2
+    memory: 8
+
+  - type: create_job
+    name: Load PDFs to Pinecone
+    entity_label: load-to-pinecone
+    script: 1_job-load-docs-to-pinecone/load-to-pinecone.py
+    arguments: None
+    short_summary: Create/Load PDF embeddings to Pinecone
+    long_summary: Job to create PDF document embeddings and subsequently load the created PDF embeddings to Pinecone.
+    cpu: 2
+    memory: 4
+    environment:
+      TASK_TYPE: CREATE/RUN_JOB
+
+  - type: run_job
+    entity_label: load-to-pinecone
+    short_summary: Populate Pinecone with PDF documents embeddings
+
+  - type: start_application
+    name: Guardrails Chatbot
+    subdomain: guardrails-chatbot
+    script: app.py
+    short_summary: Create and start Chatbot with Guardrails Streamlit app.
+    long_summary: Create and start Chatbot with Guardrails Streamlit app. Remember to enable unauthenticated app access for external access to the UI.
+    cpu: 2
+    memory: 4
+    environment_variables:
+      TASK_TYPE: START_APPLICATION

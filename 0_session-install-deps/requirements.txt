@@ -1,0 +1,8 @@
+nemoguardrails==0.4.0
+langchain
+openai
+pypdf
+pinecone-client
+tiktoken
+streamlit
+asyncio
