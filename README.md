@@ -94,6 +94,9 @@ NeMo Guardrails provides several mechanisms for protecting an LLM-powered chat a
 You can use programmable guardrails in different types of use cases:
 
 <b>1. Question Answering over a set of documents (a.k.a. Retrieval Augmented Generation):</b> Enforce fact-checking and output moderation.
+
 <b>2. Domain-specific Assistants (a.k.a. chatbots):</b> Ensure the assistant stays on topic and follows the designed conversational flows.
+
 <b>3. LLM Endpoints:</b> Add guardrails to your custom LLM for safer customer interaction.
+
 <b>4. LangChain Chains:</b> If you use LangChain for any use case, you can add a guardrails layer around your chains.
