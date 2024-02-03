@@ -1,8 +1,8 @@
 nemoguardrails==0.4.0
-langchain
+langchain==0.0.292
 openai
-pypdf
-pinecone-client
+pypdf==3.16.1
+pinecone-client==2.2.4
 tiktoken
 streamlit
 asyncio
