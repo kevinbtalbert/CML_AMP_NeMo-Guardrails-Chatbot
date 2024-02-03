@@ -9,3 +9,5 @@ asyncio==3.4.3
 langchain-community==0.0.17
 langchain-core==0.1.18
 langchain-openai==0.0.5
+protobuf-4.25.2
+async-timeout==4.0.3
