@@ -79,11 +79,11 @@ NeMo Guardrails enables developers building LLM-based applications to easily add
 
 Key benefits of adding programmable guardrails include:
 
-- <b>Building Trustworthy, Safe, and Secure LLM-based Applications:</br> you can define rails to guide and safeguard conversations; you can choose to define the behavior of your LLM-based application on specific topics and prevent it from engaging in discussions on unwanted topics.
+- <b>Building Trustworthy, Safe, and Secure LLM-based Applications:</b> you can define rails to guide and safeguard conversations; you can choose to define the behavior of your LLM-based application on specific topics and prevent it from engaging in discussions on unwanted topics.
 
-- <br>Connecting models, chains, and other services securely:</br> you can connect an LLM to other services (a.k.a. tools) seamlessly and securely.
+- <br>Connecting models, chains, and other services securely:</b> you can connect an LLM to other services (a.k.a. tools) seamlessly and securely.
 
-- <br>Controllable dialog:</br> you can steer the LLM to follow pre-defined conversational paths, allowing you to design the interaction following conversation design best practices and enforce standard operating procedures (e.g., authentication, support).
+- <br>Controllable dialog:</b> you can steer the LLM to follow pre-defined conversational paths, allowing you to design the interaction following conversation design best practices and enforce standard operating procedures (e.g., authentication, support).
 
 #### Protecting against LLM Vulnerabilities
 NeMo Guardrails provides several mechanisms for protecting an LLM-powered chat application against common LLM vulnerabilities, such as jailbreaks and prompt injections. Below is a sample overview of the protection offered by different guardrails configuration for the example ABC Bot included in this repository. For more details, please refer to the LLM Vulnerability Scanning page.
@@ -93,10 +93,13 @@ NeMo Guardrails provides several mechanisms for protecting an LLM-powered chat a
 #### Use Cases
 You can use programmable guardrails in different types of use cases:
 
-1. <b>Question Answering over a set of documents (a.k.a. Retrieval Augmented Generation):</b> Enforce fact-checking and output moderation.
+<b>1. Question Answering over a set of documents (a.k.a. Retrieval Augmented Generation):</b> Enforce fact-checking and output moderation.
 
-2. <b>Domain-specific Assistants (a.k.a. chatbots):</b> Ensure the assistant stays on topic and follows the designed conversational flows.
 
-3. <b>LLM Endpoints:</b> Add guardrails to your custom LLM for safer customer interaction.
+<b>2. Domain-specific Assistants (a.k.a. chatbots):</b> Ensure the assistant stays on topic and follows the designed conversational flows.
 
-4. <b>LangChain Chains:</b> If you use LangChain for any use case, you can add a guardrails layer around your chains.
+
+<b>3. LLM Endpoints:</b> Add guardrails to your custom LLM for safer customer interaction.
+
+
+<b>4. LangChain Chains:</b> If you use LangChain for any use case, you can add a guardrails layer around your chains.
