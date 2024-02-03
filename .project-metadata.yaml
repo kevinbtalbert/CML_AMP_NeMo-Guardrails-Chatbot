@@ -10,10 +10,10 @@ environment_variables:
     description: "Access key ID for interacting with OpenAI API"
   OPENAI_EMBEDDING_MODEL:
     default: "text-embedding-ada-002"
-    description: "Embedding model for OpenAI to use (Default is the text-embedding-ada-002 embedding model)"
+    description: "Embedding model for OpenAI to use (Default is the text-embedding-ada-002 embedding model). Changing this will require manually adjusting the Rails configural file in 2_app/config.yml."
   OPENAI_LLM_COMPLETION_MODEL:
-    default: "text-davinci-003"
-    description: "Completion model for OpenAI to use (Default is the text-davinci-003 completion model)"
+    default: "gpt-3.5-turbo"
+    description: "Completion model for OpenAI to use (Default is the gpt-3.5-turbo completion model). Changing this will require manually adjusting the Rails configural file in 2_app/config.yml."
   PINECONE_API_KEY:
     default: ""
     description: "Access key ID for interacting with Pinecone API"
