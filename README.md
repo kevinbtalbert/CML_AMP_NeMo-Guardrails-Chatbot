@@ -1,7 +1,7 @@
 # Contextual Chatbot with Guardrails
 ## Cloudera Community AMPs
 
-This Applied Machine Learning Prototype (AMP) builds a similarity-search based chatbot built using **Langchain, OpenAI embeddings, Pinecone Vector DB and NeMo-Guardrails** This chatbot is designed to showcase how organizations can leverage AI safely and responsibly by implementing guardrails.
+This Applied Machine Learning Prototype (AMP) builds a similarity-search based chatbot built using **Langchain, OpenAI embeddings, Pinecone Vector DB, and NeMo-Guardrails**. This chatbot is designed to showcase how organizations can leverage AI safely and responsibly by implementing guardrails.
 
 ![](/assets/demo.png)
 
