@@ -1,6 +1,6 @@
 name: Chatbot with Guardrails
 description: "AMP showcasing NeMo Guardrails, Langchain, OpenAI Embeddings, Pinecone, and Streamlit to create a complete Chatbot usecase with Guardrails."
-author: "Cloudera Community AMP"
+author: "Kevin Talbert"
 date: "2024-2-2"
 specification_version: 1.0
 prototype_version: 1.0
