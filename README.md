@@ -81,9 +81,9 @@ Key benefits of adding programmable guardrails include:
 
 - <b>Building Trustworthy, Safe, and Secure LLM-based Applications:</b> you can define rails to guide and safeguard conversations; you can choose to define the behavior of your LLM-based application on specific topics and prevent it from engaging in discussions on unwanted topics.
 
-- <br>Connecting models, chains, and other services securely:</b> you can connect an LLM to other services (a.k.a. tools) seamlessly and securely.
+- <b>Connecting models, chains, and other services securely:</b> you can connect an LLM to other services (a.k.a. tools) seamlessly and securely.
 
-- <br>Controllable dialog:</b> you can steer the LLM to follow pre-defined conversational paths, allowing you to design the interaction following conversation design best practices and enforce standard operating procedures (e.g., authentication, support).
+- <b>Controllable dialog:</b> you can steer the LLM to follow pre-defined conversational paths, allowing you to design the interaction following conversation design best practices and enforce standard operating procedures (e.g., authentication, support).
 
 #### Protecting against LLM Vulnerabilities
 NeMo Guardrails provides several mechanisms for protecting an LLM-powered chat application against common LLM vulnerabilities, such as jailbreaks and prompt injections. Below is a sample overview of the protection offered by different guardrails configuration for the example ABC Bot included in this repository. For more details, please refer to the LLM Vulnerability Scanning page.
