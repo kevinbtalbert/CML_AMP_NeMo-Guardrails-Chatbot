@@ -11,13 +11,16 @@ from nemoguardrails import RailsConfig
 from nemoguardrails.integrations.langchain.runnable_rails import RunnableRails
 from langchain_community.chat_models import ChatOpenAI
 
-from dotenv import load_dotenv
+import warnings
 
-load_dotenv()
+# Suppress specific deprecation warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning, module="langchain_core._api.deprecation")
+
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 st.title('	:robot_face: :owl:  Chatbot with Guardrails')
+st.caption('This Streamlit application leverages Pinecone for Semantic Search, Langchain, OpenAI and NVIDIA\'s Guardrails to demonstrate how enterprise AI can be secure and governed. Update the guardrails configuration in 2_app/config.yml')
 prompt =  st.text_input('Enter your prompt')
 
 embeddings = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"))
