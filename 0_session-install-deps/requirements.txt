@@ -1,6 +1,6 @@
 nemoguardrails==0.4.0
 langchain
-openai==0.28.1
+openai
 pypdf==3.16.1
 pinecone-client==2.2.4
 tiktoken
