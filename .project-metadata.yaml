@@ -60,7 +60,7 @@ tasks:
     script: launch-app.py
     short_summary: Create and start Chatbot with Guardrails Streamlit app.
     long_summary: Create and start Chatbot with Guardrails Streamlit app. Remember to enable unauthenticated app access for external access to the UI.
-    cpu: 4
+    cpu: 2
     memory: 8
     environment_variables:
       TASK_TYPE: START_APPLICATION
