@@ -8,19 +8,19 @@ This Applied Machine Learning Prototype (AMP) builds a similarity-search based c
 NeMo Guardrails is an innovative, open-source toolkit designed to empower developers with the ability to integrate programmable guardrails into large language model (LLM)-based conversational applications. It offers a versatile approach to managing the output of LLMs, ensuring conversations are safe, secure, and aligned with specified guidelines.
 
 #### Key Features
-<b>1. Programmable Guardrails:</br> Customize the behavior of your LLM applications to avoid unwanted topics, adhere to predefined dialog paths, or ensure a specific interaction style.
+<b>1. Programmable Guardrails:</b> Customize the behavior of your LLM applications to avoid unwanted topics, adhere to predefined dialog paths, or ensure a specific interaction style.
 
 
-<b>2. Comprehensive Protection:</br> Includes mechanisms to safeguard against common LLM vulnerabilities such as jailbreaks and prompt injections.
+<b>2. Comprehensive Protection:</b> Includes mechanisms to safeguard against common LLM vulnerabilities such as jailbreaks and prompt injections.
 
 
-<b>3. Versatile Use Cases:</br> Ideal for question answering systems, domain-specific assistants, LLM endpoints, and more.
+<b>3. Versatile Use Cases:</b> Ideal for question answering systems, domain-specific assistants, LLM endpoints, and more.
 
 
-<b>4. Easy Integration:</br> Minimal changes needed to incorporate guardrails into existing LLM applications, supported by both Python API and a dedicated guardrails server.
+<b>4. Easy Integration:</b> Minimal changes needed to incorporate guardrails into existing LLM applications, supported by both Python API and a dedicated guardrails server.
 
 
-<br>5. Supported LLMs:</br> Compatible with a range of LLMs including OpenAI's GPT-3.5, GPT-4, and others.
+<br>5. Supported LLMs:</b> Compatible with a range of LLMs including OpenAI's GPT-3.5, GPT-4, and others.
 
 
 ### Implementation
