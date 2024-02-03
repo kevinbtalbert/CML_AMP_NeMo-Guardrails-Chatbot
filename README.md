@@ -3,6 +3,8 @@
 
 This Applied Machine Learning Prototype (AMP) builds a similarity-search based chatbot built using **Langchain, OpenAI embeddings, Pinecone Vector DB and NeMo-Guardrails** This chatbot is designed to showcase how organizations can leverage AI safely and responsibly by implementing guardrails.
 
+![](/assets/demo.png)
+
 ### NeMo Guardrails (by NVIDIA)
 NeMo Guardrails, developed by NVIDIA, is a cutting-edge solution aimed at ensuring the safety of AI-powered applications across the industry. It is compatible with many large language models (LLMs) including OpenAI's ChatGPT, allowing developers to implement applications that are secure, accurate, and domain-specific. The software introduces three main types of guardrails: topical guardrails that keep conversations within desired subjects, safety guardrails that ensure responses are appropriate and factually accurate, and security guardrails that limit connections to safe, external applications. NeMo Guardrails is accessible to developers of all skill levels, requiring only minimal coding to establish new rules. Its open-source nature ensures compatibility with widely-used enterprise tools like LangChain and integration platforms such as Zapier, highlighting its versatility in enhancing AI application safety without needing extensive machine learning expertise. The initiative has been met with enthusiasm from industry professionals, underscoring its potential to make AI a reliable and trusted technology for the future.
 
