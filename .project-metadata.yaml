@@ -19,10 +19,10 @@ environment_variables:
     description: "Access key ID for interacting with Pinecone API"
   PINECONE_ENVIRONMENT:
     default: "gcp-starter"
-    description: "Only Required for Pinecone Vector DB: Enter your Pinecone environment here. (Shown in API Keys page)"
+    description: "Required for Pinecone Vector DB: Enter your Pinecone environment here. For the free account, gcp-starter is the default. (Shown in API Keys page)"
   PINECONE_INDEX:
     default: "cml-guardrails"
-    description: "Only Required for Pinecone Vector DB: The default is 'cml-default' and can be changed to identify variations for organizations with multiple indexes."
+    description: "Required for Pinecone Vector DB: The default is 'cml-guardrails' and can be changed to identify variations for organizations with multiple indexes."
 
 runtimes: 
   - editor: JupyterLab
