@@ -5,6 +5,7 @@ from langchain.vectorstores import Pinecone
 from langchain.embeddings.openai import OpenAIEmbeddings
 import os
 import pinecone
+import glob
 
 # Initialize Pinecone and OpenAI API
 pinecone.init(
@@ -33,18 +34,18 @@ index = pinecone.Index(index_name)
 # Define the path to your documents folder
 folder_path = '/home/cdsw/docs'
 
-# List all PDF files in the folder
-pdf_files = [file for file in os.listdir(folder_path) if file.endswith('.pdf')]
+# List all PDF files in the folder and subfolders
+pdf_files = glob.glob(os.path.join(folder_path, '**/*.pdf'), recursive=True)
 
 for pdf_file in pdf_files:
     print(pdf_file)
-    loader = PyPDFLoader(folder_path + "/" + pdf_file)
+    loader = PyPDFLoader(pdf_file)
     data = loader.load()
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
     texts = text_splitter.split_documents(data)
     docsearch = Pinecone.from_texts([t.page_content for t in texts], embeddings, index_name=index_name)
     print("Loaded PDF document " + pdf_file + " successfully to Pinecone index " + index_name)
-    
+
 #     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 #     texts = text_splitter.split_documents(data)
 #     embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
