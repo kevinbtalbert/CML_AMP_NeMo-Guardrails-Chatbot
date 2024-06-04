@@ -62,18 +62,7 @@ This AMP requires pip packages and models from huggingface. Depending on your CM
 
 #### Content for Semantic Search in `/docs`
 
-Here we leverage several chapters of the free textbook "Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville available for free at https://www.deeplearningbook.org/
-It is intended that the user will update the contents of the `/docs` directory with their own document repository. This is intended to demonstrate our capabilities with using PDFs (.pdf) as opposed to text (.txt) documents. The user may update with their own set of PDFs or perhaps update the job syntax entirely to support a different data type.
-
-Bibliographic / Citation Information:
-
-@book{Goodfellow-et-al-2016,
-    title={Deep Learning},
-    author={Ian Goodfellow and Yoshua Bengio and Aaron Courville},
-    publisher={MIT Press},
-    note={\url{http://www.deeplearningbook.org}},
-    year={2016}
-}
+Here we leverage several docs from our Cloudera Machine Learning public documentation in `.pdf` format. It is intended that the user will update the contents of the `/docs` directory with their own document repository. This is intended to demonstrate our capabilities with using PDFs (.pdf) as opposed to text (.txt) documents. The user may update with their own set of PDFs or perhaps update the job syntax entirely to support a different data type.
 
 ## NeMo Guardrails (from https://github.com/NVIDIA/NeMo-Guardrails)
 
@@ -107,3 +96,6 @@ You can use programmable guardrails in different types of use cases:
 
 
 **4. LangChain Chains:** If you use LangChain for any use case, you can add a guardrails layer around your chains.
+
+
+Copyright (c) 2023 - 2024 - Cloudera, Inc. All rights reserved.
