@@ -36,13 +36,20 @@ runtimes:
     edition: Standard
   
 tasks:
-  - type: run_session
-    name: Install Dependencies
+  - type: create_job
+    name: Create Job to Install Dependencies
+    entity_label: install_dependencies
     script: 0_session-install-deps/install-dependencies.py
-    short_summary: Install Dependencies
+    short_summary: Install Requirements and Dependencies
     kernel: python3
     cpu: 2
     memory: 8
+    environment:
+      TASK_TYPE: CREATE/RUN_JOB
+
+  - type: run_job
+    entity_label: install_dependencies
+    short_summary: Run Job to Install Dependencies
 
   - type: create_job
     name: Load PDFs to Pinecone
